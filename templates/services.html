@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+
+    <meta charset="UTF-8" />
+    <title>website</title>
+    <link rel="stylesheet"   type="text/css"href="{{url_for('static',filename='style.css')}}"/>
+    <link rel="stylesheet"type="text/css" href="{{url_for('static',filename='bootstrap.min.css')}}"/>
+</head>
+<body>
+    <div href="#" class="box-area"></div>
+
+    <header>
+      <div class="container">
+        <div class="wrapper">
+
+        </div>
+        <nav>
+          <a href="Home">Home</a>
+          <a href="/">logout</a>
+        </nav>
+      </div>
+    </header>
+    <div class="header-image w-100 d-flex align-items-center text-center">
+        <div class="container">
+          <h1 class="text-white">Eye Retina</h1>
+        </div>
+      </div>
+  
+      <section class="about p-5" id="about">
+  
+        <div class="container bg-white mt-5">
+          <h2>Eye Retina diseases</h2>
+        </div>
+  
+        <div class="container bg-white mt-5">
+          <div class="wrapper">
+            <p>
+             Retina, layer of nervous tissue that covers the inside of the back two-thirds of the eyeball, in which stimulation by light occurs,
+             initiating the sensation of vision. The retina is actually an extension of the brain, formed
+            embryonically from neural tissue and connected to the brain proper by the optic nerve Retinal diseases cause damage to any part of the retina. Untreated
+            retinal diseases can lead to severe vision loss and even blindness. With early detection, some retinal diseases can be treated,
+             while others can be controlled or slowed down to preserve, or even restore vision Retinal diseases vary widely,
+              but most of them cause visual symptoms. Retinal diseases can affect any part of your retina, a thin layer of tissue on the inside back wall of your eye.
+              The retina contains millions of light-sensitive cells (rods and cones)and other nerve cells that receive and organize visual information. Your retina sends
+              this information to your brain through your optic nerve, enabling you to see.
+             Treatment is available for some retinal diseases. Depending on your condition,
+             treatment goals may be to stop or slow the disease and preserve, improve or restore your vision. Untreated,
+              some retinal diseases can cause severe vision loss or blindness.Common retinal diseases and conditions include:Diabetic retinopathy.Age related macular degeneration(AMD)
+              glaucoma,cataract
+            </p>
+          </div>
+        </div>
+      </section>
+ <form action="result" method="POST" enctype="multipart/form-data">
+     <div class="row justify-content-center">
+        <div class="col-auto">
+            <input type="file" name="img" class="form-control">
+        </div>
+         <div class="col-auto">
+             <input type="submit" name="btn" class="btn btn-success">
+        </div>
+     </div>
+ </form>
+</body>
