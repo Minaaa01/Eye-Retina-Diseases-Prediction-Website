@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+.display_image
+{
+width:375px;
+height:211px;
+border:1px solid block
+background-position:center;
+background-size:cover;
+
+}
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: #262626;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.logo {
+    width: 150px;
+    float: left;
+    height: 100px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: bignoodletitling;
+    color: #fff;
+    letter-spacing: 5px;
+
+}
+
+nav {
+    float: right;
+    line-height: 100px;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+
+}
+.header-image{
+    height: 500px;
+    background-image: url("images/image.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-area {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-image: url("static\images\image.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+banner-area h2 {
+    padding-top: 8%;
+    font-size: 70px;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.content-area {
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: #ddd;
+    height: 1500px
+}
+
+.content-area h2 {
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+
+}
+
+.content-area p {
+    padding: 6% 0;
+    font-family: merienda;
+    line-height: 30px;
+
+}
+.mvv-container
+{
+   max-width: 90%;
+   margin: 50px  auto 0;
+
+}
+.mvv-container .mvv-block
+{
+    margin-bottom: 50px;
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mvv-container .mvv-block .image
+{
+
+    flex: 0 0 auto ;
+    width: 400px;
+    float: right; 
+
+}
+.mvv-container .mvv-block .image img
+{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0  0 10px 5px rgba(0, 0, 0, 0.3);
+
+}
+.mvv-container .mvv-block .content
+{
+    flex: 0 0 auto;
+    width: calc(100% - 400px);
+   box-sizing: border-box;
+   /* align-self: center; */
+
+}
+@media screen and (min-width:1024px)
+{
+    .mvv-container .mvv-block:nth-child(odd) .image
+    {
+       order: 1; 
+    }
+    .mvv-container .mvv-block:nth-child(even) .image
+    {
+        order: 2;
+    }
+    .mvv-container .mvv-block:nth-child(odd) .content
+    {
+       order: 2; 
+       padding-left: 30px;
+    }
+    .mvv-container .mvv-block:nth-child(even) .content
+    {
+        order: 1;
+        padding-right: 30px;
+    }
+}
