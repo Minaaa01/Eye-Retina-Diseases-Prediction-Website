@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+
+    <meta charset="UTF-8" />
+    <title>website</title>
+    <link rel="stylesheet"   type="text/css"href="{{url_for('static',filename='style.css')}}"/>
+    <link rel="stylesheet"type="text/css" href="{{url_for('static',filename='bootstrap.min.css')}}"/>
+   
+  </head>
+
+  <body>
+    <div href="#" class="box-area"></div>
+
+    <header>
+      <div class="container">
+        <div class="wrapper">
+
+        </div>
+        <nav>
+          <a href="Home">Home</a>
+          <a href="Services">prediction</a>
+          <a href="/">logout</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="header-image w-100 d-flex align-items-center text-center">
+      <div class="container">
+        <h1 class="text-white">Eye Retina</h1>
+      </div>
+    </div>
+
+    <section class="about p-5" id="about">
+
+      <div class="container bg-white mt-5">
+        <h2>Eye Retina diseases</h2>
+      </div>
+
+      <div class="container bg-white mt-5">
+        <div class="wrapper">
+          <p>
+            Retina, layer of nervous tissue that covers the inside of the back two-thirds of the eyeball, in which stimulation by light occurs,
+             initiating the sensation of vision. The retina is actually an extension of the brain, formed
+            embryonically from neural tissue and connected to the brain proper by the optic nerve Retinal diseases cause damage to any part of the retina. Untreated
+            retinal diseases can lead to severe vision loss and even blindness. With early detection, some retinal diseases can be treated,
+             while others can be controlled or slowed down to preserve, or even restore vision Retinal diseases vary widely,
+              but most of them cause visual symptoms. Retinal diseases can affect any part of your retina, a thin layer of tissue on the inside back wall of your eye.
+              The retina contains millions of light-sensitive cells (rods and cones)and other nerve cells that receive and organize visual information. Your retina sends
+              this information to your brain through your optic nerve, enabling you to see.
+             Treatment is available for some retinal diseases. Depending on your condition,
+             treatment goals may be to stop or slow the disease and preserve, improve or restore your vision. Untreated,
+              some retinal diseases can cause severe vision loss or blindness.Common retinal diseases and conditions include:Diabetic retinopathy.Age related macular degeneration(AMD)
+              glaucoma,cataract
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="mvv-container">
+       <div class="mvv-block"  >
+        <div class="image">
+          <img src="static\images\normal eye.png" alt="">
+        </div>
+        <div class="content">
+          <h5>normal eye image</h5>
+          <P> In a healthy eye, the lens is clear and allows light to pass through.
+              Light is focused by the cornea and lens onto a thin layer of tissue called the retina
+              The retina works like the film in a camera.When light hits the retina, tiny cells collect the light signals and convert them into electrical
+              signals, which are then sent through the optic nerve and to the brain, where they are processed into the images we see.
+              
+             
+           
+          </p>
+        </div>
+      </div>
+      <div class="mvv-container">
+        <div class="mvv-block" :nth-child(even)>
+           <div class="image">
+                 <img src="static\images\cataract.png" alt="">
+         </div>
+         <div class="content">
+           <h5>cataract image</h5>
+                <P> Cataracts are an eye condition caused when the lens of the eye develops cloudy patches. Over time these patches usually grow bigger,
+                   causing blurry, misty vision.There are different types of cataracts, depending on which part of the eye’s lens is affected: 
+                   they can affect the centre, the sides, or the back of the lens. They can appear in just one 
+                   eye or in both eyes, although they may not develop at the same time. Eventually, if they’re not treated, cataracts can lead to blindness.
+                </p>
+            </div>
+         </div>
+
+         <div class="mvv-container">
+          <div class="mvv-block" :nth-child(even)>
+             <div class="image">
+                   <img src="static\images\Glaucoma.jpg" alt="">
+           </div>
+           <div class="content">
+             <h5>Glaucoma image</h5>
+                  <P> 
+                    Glaucoma is not just one eye disease, but a group of eye conditions resulting in optic nerve damage, which may cause loss of vision. 
+                    Glaucoma occurs when the internalpressure of the eyes increases enough to damage the nerve fibers in the optic nerve and cause vision loss. 
+                    The optic nerve is the key to our sight. It is composed of around one million individual nerve fibers and transmits visual signals from the eye to the brain. 
+                    Glaucoma is one of the leading causes of blindness in the United States. 
+                    Glaucoma can damage your vision so gradually that you may not notice any loss of vision until the disease is at an advanced stage. 
+                  </p>
+              </div>
+           </div>
+
+
+    </div>
+    
+
+
+    <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.slim.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+          </div>
+  </body>
+</html>
